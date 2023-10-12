@@ -54,13 +54,13 @@ body {
   }
   
   .first{
-    background-image: url(/images/deepdishpizza.jpg);
+    background-image: url(images/deepdishpizza.jpg);
   }
   .second{
-    background-image: url("/images/crepes.jpeg");
+    background-image: url("images/crepes.jpeg");
   }
   .dessert{
-    background-image: url("/images/halalfood.jpeg");
+    background-image: url("images/halalfood.jpeg");
   }
   .price {
     float: right;
