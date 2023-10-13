@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-<script src="/assets/jquery.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="styles.css">
 
@@ -11,23 +10,24 @@
 <body>
 <h1>Abrahim's restaurant</h1>
 <h2>a Chicago eatery</h2>
-<div class="first">
+<div class="first show-description">
   <p>Deep Dish Pizza<span class="price">$15</span><br />
   <small>Chicago-style pizza is pizza prepared according to several styles developed in Chicago. It can refer to both the well-known deep-dish or stuffed pizzas and the lesser-known thin-crust tavern-style pizzas more popular with locals. </small></p>
 </div>
 
-<div class="second">
+<div class="second show-description">
   <p>Crepes<span class="price">$10</span><br />
   <small>A crêpe or crepe is a very thin type of pancake. Crêpes are usually one of two varieties: sweet crêpes or savoury galettes. They are often served with a wide variety of fillings such as cheese, fruit, vegetables, meats, and a variety of spreads. Crêpes can also be flambéed, such as in crêpes Suzette</small></p>
 </div>
   
-<div class="dessert">
+<div class="dessert show-description">
   <p>Halal Food<span class="price">$12</span><br />
   <small>This chicken and rice bowl is made with fluffy Middle Eastern yellow rice, marinated grilled chicken, a cool creamy yogurt sauce, and then finished off with fresh lettuce, tomatoes, pita strips, and harissa hot sauce</small></p>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  $('div').on('click', function() {
+  $('div.show-description').on('click', function() {
       $(this).toggleClass('show-description');
   });
 </script>
